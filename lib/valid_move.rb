@@ -15,6 +15,6 @@ end
 def valid_move?(user_input)
   y = user_input
   if y >= 0 && y <= 8
-    return true
+    position_taken(board, y)
   end
 end
