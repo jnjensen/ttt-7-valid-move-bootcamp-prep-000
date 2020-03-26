@@ -12,10 +12,10 @@ def position_taken?(array, token_index)
   end
 end
 
-def valid_move?(user_input)
+def valid_move?(array, user_input)
   y = user_input
   if y >= 0 && y <= 8
-    if !(position_taken?(board, y))
+    if !(position_taken?(array, y))
       return true
     end
   end
